@@ -1,5 +1,16 @@
 
 =begin
+Instalacija:
+gem install mysql -v=2.9.3
+
+Dodavanje taskova:
+ruby add.rb
+
+Pokretanje:
+ruby q.rb
+=end
+
+=begin
 DB:
 create database zadq;
 use zadq;
@@ -20,7 +31,7 @@ require "mysql"
 @debug = 1
 
 MYSQL_C = {
-	:host => "192.168.1.250",
+	:host => "127.0.0.1",
 	:user => "root",
 	:pass => "pw",
 	:db   => "zadq"
