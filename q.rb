@@ -1,7 +1,7 @@
 
 =begin
 Instalacija:
-gem install mysql -v=2.9.3
+gem install ruby-mysql -v=2.9.3
 
 Dodavanje taskova:
 ruby add.rb
