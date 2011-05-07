@@ -74,10 +74,10 @@ class ReCon
 		if k.empty?
 			d "Unknown key '#{q}'"
 		else
-			# old = TaskRecord.new @r.get(k.first)
-			# old.set('done', 1)
-			# @r.set k.first, old.t
-			@r.del k.first
+			old = TaskRecord.new @r.get(k.first)
+			old.set('done', 1)
+			@r.set k.first, old.t
+			# @r.del k.first
 			puts "DONE #{id}"
 		end
 	end
