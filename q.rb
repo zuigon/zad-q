@@ -153,6 +153,13 @@ def run(tasks)
 end
 
 q = MyCon.new
+
+if %w(c clean).include? ARGV[0]
+	q.query "delete from tasks where done=1"
+	puts "OK"
+	exit
+end
+
 while 1
 	# puts "tick"
 	t = q.todo
